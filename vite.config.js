@@ -19,12 +19,10 @@ export default defineConfig({
         background_color: '#ffffff',
         theme_color: '#0ea5e9',
         icons: [
-          // Ensure PNG icons are present for installability in Chromium
-          { src: 'https://via.placeholder.com/192.png?text=ResQ', sizes: '192x192', type: 'image/png' },
-          { src: 'https://via.placeholder.com/512.png?text=ResQ', sizes: '512x512', type: 'image/png' },
-          // Using your provided logo file for PWA icons (JPEG). For best results, supply square PNGs later.
-          { src: '/logo.png.jpg', sizes: '192x192', type: 'image/jpeg' },
-          { src: '/logo.png.jpg', sizes: '512x512', type: 'image/jpeg' },
+          // Local icons generated from your logo (will be created under public/icons)
+          { src: '/icons/pwa-192x192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/icons/pwa-512x512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/icons/maskable-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
     }),

@@ -65,7 +65,7 @@ export default function InstallPrompt() {
       <button
         onClick={() => canInstall && setShowModal(true)}
         disabled={!canInstall}
-        className={`inline-flex items-center gap-2 rounded-full px-4 py-2 font-semibold transition-colors border ${canInstall ? 'bg-brand text-white hover:bg-brand-dark border-brand' : 'bg-brand/60 text-white border-brand/70 cursor-not-allowed'}`}
+        className={`shrink-0 inline-flex items-center gap-2 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold transition-colors border ${canInstall ? 'bg-brand text-white hover:bg-brand-dark border-brand' : 'bg-brand/60 text-white border-brand/70 cursor-not-allowed'}`}
         title={canInstall ? 'Install ResQWings' : 'Install not available yet'}
       >
         Install App
