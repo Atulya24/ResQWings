@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App defaults */
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased;
+  /* Navy dotted background pattern */
+  background-color: #0b1624; /* deep navy */
+  background-image:
+    radial-gradient(transparent 1px, rgba(255,255,255,0.02) 1px),
+    radial-gradient(transparent 1px, rgba(255,255,255,0.02) 1px),
+    linear-gradient(180deg, rgba(14,165,233,0.06), rgba(14,165,233,0));
+  background-size: 16px 16px, 16px 16px, 100% 100%;
+  background-position: 0 0, 8px 8px, 0 0;
+}
