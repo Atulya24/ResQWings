@@ -22,7 +22,7 @@ export default function TopBar() {
   const [logoSrc, setLogoSrc] = React.useState('/logo.png')
 
   return (
-    <div className="bg-white text-slate-900 shadow">
+    <div className="bg-[#0b2a4a] text-white shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center">
         <div className="flex items-center gap-3">
           <img
@@ -35,15 +35,15 @@ export default function TopBar() {
             }}
           />
           <div className="leading-tight">
-            <div className="font-bold text-lg text-[#0b2a4a]">ResQWings - DISASTER RESPONSE</div>
+            <div className="font-bold text-lg text-white">ResQWings - DISASTER RESPONSE</div>
             <div className="text-xs text-brand">AI-Powered Medical Supply & Communication Delivery System</div>
           </div>
         </div>
         {/* Right-most controls */}
         <div className="ml-auto flex items-center gap-4 text-sm">
           <InstallPrompt />
-          <span className="bg-blue-600 border border-blue-300 text-white px-3 py-1 rounded-full font-semibold shadow-sm">ALERT: CRITICAL</span>
-          <span className="text-black hidden sm:inline">{dateStr}, {timeStr}</span>
+          <span className="bg-transparent border border-white text-white px-3 py-1 rounded-full font-semibold shadow-sm">ALERT: CRITICAL</span>
+          <span className="text-white hidden sm:inline">{dateStr}, {timeStr}</span>
         </div>
       </div>
     </div>
