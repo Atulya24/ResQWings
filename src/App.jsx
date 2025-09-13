@@ -51,8 +51,8 @@ export default function App() {
             />
           </div>
 
-          {/* Dark Panels */}
-          <div className="mt-6 space-y-4">
+          {/* Dark Panels (now in responsive columns) */}
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <MetricListPanel
               title="AI Performance"
               items={[
@@ -81,8 +81,8 @@ export default function App() {
             />
           </div>
 
-          {/* Feature Cards */}
-          <div className="mt-6 space-y-4">
+          {/* Feature Cards (now in responsive columns) */}
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             <FeatureCard
               icon={(
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

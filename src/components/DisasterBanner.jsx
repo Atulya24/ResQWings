@@ -10,7 +10,7 @@ export default function DisasterBanner() {
           </svg>
         </div>
         <div>
-          <div className="font-semibold">ACTIVE DISASTER: Earthquake M7.2 - Kashmir Region</div>
+          <div className="font-semibold">ACTIVE DISASTER: Flood - Delhi Region</div>
           <div className="text-sm text-brand-light">AI powered drones deployed for medical supply delivery and communication restoration</div>
         </div>
       </div>
