@@ -8,20 +8,20 @@ function StatusBadge({ label, color = 'bg-slate-200 text-slate-800' }) {
 
 function MissionRow({ code, title, subtitle, meta, leftDot = 'bg-yellow-500', badges = [] }) {
   return (
-    <div className="px-5 py-4 flex items-center justify-between">
+    <div className="px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
       <div className="flex items-start gap-3 min-w-0">
         <span className={`mt-1 w-2 h-2 rounded-full ${leftDot}`} />
-        <div className="truncate">
-          <div className="flex items-center gap-2 truncate">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="font-semibold text-slate-100 shrink-0">{code}</span>
-            <span className="text-blue-300 truncate">{title}</span>
+            <span className="text-blue-300 break-words">{title}</span>
             <span className="text-slate-400 shrink-0">→</span>
-            <span className="text-slate-300 truncate">{subtitle}</span>
+            <span className="text-slate-300 break-words">{subtitle}</span>
           </div>
-          <div className="text-xs text-slate-400 mt-1">{meta}</div>
+          <div className="text-xs text-slate-400 mt-1 break-words">{meta}</div>
         </div>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-wrap sm:justify-end">
         {badges.map((b, i) => (
           <StatusBadge key={i} {...b} />
         ))}
