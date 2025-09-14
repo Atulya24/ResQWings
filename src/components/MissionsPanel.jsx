@@ -49,7 +49,7 @@ export default function MissionsPanel() {
           subtitle="Flood Zone A"
           meta="Payload: 4.2kg | ETA: 12 min"
           leftDot="bg-yellow-500"
-          badges={[{ label: 'In Progress', color: 'bg-yellow-200 text-yellow-900' }, { label: 'Complete', color: 'bg-emerald-200 text-emerald-900' }]}
+          badges={[{ label: 'In Progress', color: 'bg-yellow-200 text-yellow-900' }]}
         />
         <MissionRow
           code="M002"
